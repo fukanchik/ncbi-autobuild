@@ -14,6 +14,6 @@ ls
 
 ls
 
-(cd toolkit-svn/*-DebugMT64/build && /usr/bin/make -f Makefile.flat)
+(cd "*-DebugMT64/build" && /usr/bin/make -f Makefile.flat)
 
 ls
