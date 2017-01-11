@@ -41,6 +41,7 @@ echo "Dockerfile:"
 cat Dockerfile
 
 mv Dockerfile shared/
+cp build_deb.sh build_rpm.sh shared/
 
 docker build --rm=true --quiet=true -t ${TARANTOOL_IMAGE}-for-${USER} shared
 
