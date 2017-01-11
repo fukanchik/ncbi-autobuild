@@ -4,7 +4,7 @@ services:
   - docker
 
 script:
-  - ./test.sh
+  - ./travis.sh
 
 env:
   matrix:
