@@ -1,9 +1,12 @@
 #! /usr/bin/env bash
 
+
 [ -z "$PLATFORM" ] && PLATFORM='GCC.sh --with-flat-makefile'
 export PLATFORM
 
 echo "Building NCBI C++ Toolkit from anonsvn"
+echo "LANG=$LANG"
+echo "LC_ALL=$LC_ALL"
 echo "$((lsb_release -a))"
 echo "$((hostname))"
 echo "PLATFORM=${PLATFORM}"
