@@ -1,9 +1,9 @@
 #!/bin/bash -x
 
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get install svn
-sudo apt-get install build-essential
+sudo apt-get -y update
+sudo apt-get -y upgrade
+sudo apt-get -y install svn
+sudo apt-get -y install build-essential
 
 . test.sh
 

@@ -20,7 +20,7 @@ ls
 
 ls
 
-(cd *-DebugMT64/ && ls && cd build && COLOR_DIAGNOSTICS=" " /usr/bin/make -f Makefile.flat ; echo y | /usr/bin/make check_r)
+(cd *-DebugMT64/ && ls && cd build && COLOR_DIAGNOSTICS=" " /usr/bin/make -f Makefile.flat -j 2 ; echo y | /usr/bin/make check_r)
 
 ls
 
