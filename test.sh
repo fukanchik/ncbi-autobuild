@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 
-[ -z $PLATFORM ] && PLATFORM='GCC.sh --with-flat-makefile'
-export $PLATFORM
+[ -z "$PLATFORM" ] && PLATFORM='GCC.sh --with-flat-makefile'
+export PLATFORM
 
 echo "Building NCBI C++ Toolkit from anonsvn"
 echo "$((lsb_release -a))"
@@ -19,6 +19,9 @@ cd  toolkit-svn
 svn info .
 
 ls
+
+export CCACHE_DIR=/tmp/ccache
+export CCACHE_DISABLE=1
 
 ./compilers/unix/GCC.sh --with-flat-makefile
 

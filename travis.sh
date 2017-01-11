@@ -24,7 +24,7 @@ esac
 
 mkdir shared
 
-cp ${scipt_dir}/build_${PACK}.sh shared
+cp "${script_dir}/build_${PACK}.sh" "${script_dir}/test.sh" shared
 
 echo "FROM ${TARANTOOL_IMAGE}" > Dockerfile
 echo "RUN useradd -s ${SHELL} -u $(id -u) -d ${HOME} ${USER}" >> Dockerfile
