@@ -1,0 +1,14 @@
+services:
+  - docker
+
+script:
+  - ./test.sh
+
+env:
+  matrix:
+    - OS=el DIST=7 PACK=rpm
+
+notifications:
+  email: false
+  irc: false
+
