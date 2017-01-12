@@ -30,7 +30,7 @@ export CCACHE_DISABLE=1
 
 ls
 
-(cd *-DebugMT64/ && ls && cd build && COLOR_DIAGNOSTICS=" " /usr/bin/make -f Makefile.flat -j 2 ; echo y | /usr/bin/make check_r)
+(cd *-DebugMT64/ && ls && cd build && COLOR_DIAGNOSTICS=" " /usr/bin/make -f Makefile.flat -j 16 ; echo y | /usr/bin/make check_r)
 
 ls
 
