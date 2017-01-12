@@ -26,7 +26,7 @@ ls
 export CCACHE_DIR=/tmp/ccache
 export CCACHE_DISABLE=1
 
-./compilers/unix/GCC.sh --with-flat-makefile
+./compilers/unix/GCC.sh --with-flat-makefile --with-projects=scripts/projects/connect.lst
 
 ls
 
