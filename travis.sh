@@ -49,5 +49,3 @@ docker run -d --name cxxbuild --volume ${PWD}/shared:/home/${USER}/result --work
 
 docker logs -f cxxbuild &
 
-sleep $((60*40))
-
