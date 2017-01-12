@@ -1,5 +1,8 @@
 sudo: false
 
+language:
+  - cpp
+
 services:
   - docker
 
@@ -9,7 +12,7 @@ script:
 env:
   matrix:
     - OS=el DIST=7 PACK=rpm PLATFORM='GCC.sh --without-debug --without-flat-makefile --without-ncbi-c'
-    - OS=ubuntu DIST=trusty PACK=deb PLATFORM='GCC.sh --without-debug --without-flat-makefile --without-ncbi-c'
+    - OS=ubuntu DIST=trusty PACK=deb PLATFORM='GCC.sh --without-debug --without-flat-makefile --without-ncbi-c --without-ccache'
 
 notifications:
   email: false
