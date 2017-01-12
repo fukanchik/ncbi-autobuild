@@ -8,6 +8,11 @@ services:
 
 script:
   - ./travis.sh
+  - ./wait.sh
+  - ./wait.sh
+  - ./wait.sh
+  - ./wait.sh
+  - ./wait.sh
 
 env:
   matrix:
