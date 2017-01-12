@@ -15,13 +15,19 @@ env:
     - OS=el DIST=7 PACK=rpm PLATFORM=1
     - OS=fedora DIST=23 PACK=rpm PLATFORM=1
     - OS=fedora DIST=24 PACK=rpm PLATFORM=1
-    - OS=ubuntu DIST=trusty PACK=deb PLATFORM=1
+    - OS=centos DIST=5 PACK=rpm PLATFORM=1
+    - OS=centos DIST=6 PACK=rpm PLATFORM=1
+    - OS=centos DIST=7 PACK=rpm PLATFORM=1
     - OS=ubuntu DIST=precise PACK=deb PLATFORM=1
+    - OS=ubuntu DIST=trusty PACK=deb PLATFORM=1
+    - OS=ubuntu DIST=wily PACK=deb PLATFORM=1
     - OS=ubuntu DIST=xenial PACK=deb PLATFORM=1
     - OS=ubuntu DIST=yakkety PACK=deb PLATFORM=1
-    - OS=debian DIST=jessie PACK=deb PLATFORM=1
-    - OS=debian DIST=wheezy PACK=deb PLATFORM=1
+    - OS=ubuntu DIST=vivid PACK=deb PLATFORM=1
     - OS=debian DIST=stretch PACK=deb PLATFORM=1
+    - OS=debian DIST=wheezy PACK=deb PLATFORM=1
+    - OS=debian DIST=jessie PACK=deb PLATFORM=1
+    - OS=debian DIST=sid PACK=deb PLATFORM=1
 
 notifications:
   email: false
