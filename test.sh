@@ -1,5 +1,8 @@
 #! /usr/bin/env bash
 
+set -x
+set -e
+
 
 [ -z "$PLATFORM" ] && PLATFORM='GCC.sh --with-flat-makefile'
 export PLATFORM
@@ -13,7 +16,7 @@ echo "PLATFORM=${PLATFORM}"
 
 ls
 
-svn co http://anonsvn.ncbi.nlm.nih.gov/repos/v1/trunk/c++ toolkit-svn
+svn co https://anonsvn.ncbi.nlm.nih.gov/repos/v1/trunk/c++ toolkit-svn
 
 ls
 
