@@ -45,7 +45,7 @@ cp test.sh build_deb.sh build_rpm.sh shared/
 
 docker build --rm=true --quiet=true -t ${TARANTOOL_IMAGE}-for-${USER} shared
 
-docker run -d -name cxxbuild --volume ${PWD}/shared:/home/${USER}/result --workdir /home/${USER}/result --rm=true --user=${USER} ${TARANTOOL_IMAGE}-for-${USER} bash -x /home/${USER}/result/build_${PACK}.sh "${PLATFORM}"
+docker run -d --name cxxbuild --volume ${PWD}/shared:/home/${USER}/result --workdir /home/${USER}/result --rm=true --user=${USER} ${TARANTOOL_IMAGE}-for-${USER} bash -x /home/${USER}/result/build_${PACK}.sh "${PLATFORM}"
 
 docker logs -f cxxbuild &
 
