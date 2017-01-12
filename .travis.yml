@@ -11,18 +11,17 @@ script:
 
 env:
   matrix:
-    - OS=el DIST=6 PACK=rpm
-    - OS=el DIST=7 PACK=rpm
-    - OS=fedora DIST=23 PACK=rpm
-    - OS=fedora DIST=24 PACK=rpm
-    - OS=fedora DIST=25 PACK=rpm
-    - OS=ubuntu DIST=trusty PACK=deb
-    - OS=ubuntu DIST=precise PACK=deb
-    - OS=ubuntu DIST=xenial PACK=deb
-    - OS=ubuntu DIST=yakkety PACK=deb
-    - OS=debian DIST=jessie PACK=deb
-    - OS=debian DIST=wheezy PACK=deb
-    - OS=debian DIST=stretch PACK=deb
+    - OS=el DIST=6 PACK=rpm PLATFORM=1
+    - OS=el DIST=7 PACK=rpm PLATFORM=1
+    - OS=fedora DIST=23 PACK=rpm PLATFORM=1
+    - OS=fedora DIST=24 PACK=rpm PLATFORM=1
+    - OS=ubuntu DIST=trusty PACK=deb PLATFORM=1
+    - OS=ubuntu DIST=precise PACK=deb PLATFORM=1
+    - OS=ubuntu DIST=xenial PACK=deb PLATFORM=1
+    - OS=ubuntu DIST=yakkety PACK=deb PLATFORM=1
+    - OS=debian DIST=jessie PACK=deb PLATFORM=1
+    - OS=debian DIST=wheezy PACK=deb PLATFORM=1
+    - OS=debian DIST=stretch PACK=deb PLATFORM=1
 
 notifications:
   email: false
