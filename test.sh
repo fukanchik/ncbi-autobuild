@@ -16,7 +16,7 @@ echo "PLATFORM=${PLATFORM}"
 
 ls
 
-svn co https://anonsvn.ncbi.nlm.nih.gov/repos/v1/trunk/c++ toolkit-svn
+svn --non-interactive --trust-server-cert co https://anonsvn.ncbi.nlm.nih.gov/repos/v1/trunk/c++ toolkit-svn
 
 ls
 
