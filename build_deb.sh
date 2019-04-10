@@ -4,12 +4,12 @@
 
 export PLATFORM=$1
 
-apt-get -y update
-apt-get -y upgrade
-apt-get -y install subversion
-apt-get -y install build-essential
-apt-get -y install less
-apt-get -y install sed
+sudo apt-get -y update
+sudo apt-get -y upgrade
+sudo apt-get -y install subversion
+sudo apt-get -y install build-essential
+sudo apt-get -y install less
+sudo apt-get -y install sed
 
 . test.sh
 
