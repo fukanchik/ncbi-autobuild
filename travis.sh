@@ -23,7 +23,7 @@ cat Dockerfile
 mv Dockerfile shared/
 cp test.sh build_deb.sh build_rpm.sh shared/
 
-docker build --rm=true --quiet=true -t ${DOCCKER_IMAGE}-for-${USER} shared
+docker build --rm=true --quiet=true -t ${DOCKER_IMAGE}-for-${USER} shared
 
 docker run --name cxxbuild --rm=true --volume ${PWD}/shared:/home/${USER}/result --workdir /home/${USER}/result --user=${USER} ${DOCKER_IMAGE}-for-${USER} bash -x /home/${USER}/result/build_${PACK}.sh "${PLATFORM}"
 
