@@ -8,7 +8,7 @@ mkdir shared
 DOCKER_IMAGE="${OS}:${DIST}"
 
 echo "FROM ${DOCKER_IMAGE}" > Dockerfile
-echo "RUN apt install sudo" > Dockerfile
+echo "RUN apt install sudo" >> Dockerfile
 echo "RUN useradd -s ${SHELL} -u $(id -u) -d ${HOME} ${USER}" >> Dockerfile
 echo "RUN usermod -a -G wheel ${USER} || :;\\" >> Dockerfile
 echo "    usermod -a -G adm ${USER} || :;\\" >> Dockerfile
