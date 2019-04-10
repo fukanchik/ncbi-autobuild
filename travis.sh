@@ -14,6 +14,7 @@ echo "RUN usermod -a -G wheel ${USER} || :;\\" >> Dockerfile
 echo "    usermod -a -G adm ${USER} || :;\\" >> Dockerfile
 echo "    usermod -a -G sudo ${USER} || :;\\" >> Dockerfile
 echo "    usermod -a -G mock ${USER} || :" >> Dockerfile
+echo "RUN echo \"${USER} ALL=(ALL) NOPASSWD:ALL\" >> /etc/sudoers" >> Dockerfile
 echo "USER ${USER}" >> Dockerfile
 
 
