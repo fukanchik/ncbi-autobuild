@@ -5,7 +5,7 @@ script_dir=$(dirname $script)
 
 mkdir shared
 
-DOCKER_IMAGE='${OS}:${DIST}'
+DOCKER_IMAGE="${OS}:${DIST}"
 
 echo "FROM ${DOCKER_IMAGE}" > Dockerfile
 echo "RUN useradd -s ${SHELL} -u $(id -u) -d ${HOME} ${USER}" >> Dockerfile
